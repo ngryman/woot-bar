@@ -1,0 +1,10 @@
+[package]
+name = "woot-bar"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.45"
+async-macros = "2.0.0"
+async-std = { version = "1.10.0", features = ["attributes"] }
+heim = "0.0.11"
