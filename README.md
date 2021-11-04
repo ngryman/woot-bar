@@ -32,12 +32,5 @@ If you prefer to configure `tmux` manually, here's what you need to add to your 
 set -g status-interval 4
 
 # Display stats on the right side
-set -g status-right "#[fg=yellow]#(/usr/local/bin/woot-bar) "
+set -g status-right "#(/usr/local/bin/woot-bar) "
 ```
-
-convert test.png \( +clone -alpha extract -draw 'fill black polygon 0,0 0,5 5,0 fill white circle
-5,5 5,0' \( +clone -flip\) -compose Multiply -composite \( +clone -flop\) -compose Multiply
--composite \) -alpha off -compose CopyOpacity -composite rounded.png
-
-convert rounded.png\( +clone -background black -shadow 40x5+0+0\) +swap -background none -layers
-merge +repage final.png
